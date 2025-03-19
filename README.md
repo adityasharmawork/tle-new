@@ -6,7 +6,7 @@ TLE CP-Tracker is a **Contest Tracking Web Application** built using the **MERN 
 ## Try Now 
 
 ### Deployed Live Link 
-- dub.sh/algosprint
+- https://dub.sh/algosprint
 
 ---
 ## Project Walkthrough 
