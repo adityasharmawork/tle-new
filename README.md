@@ -3,6 +3,18 @@
 TLE CP-Tracker is a **Contest Tracking Web Application** built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js), Web Scraping, GraphQL. It fetches **all upcoming and past coding contests** from platforms like **Codeforces, CodeChef, and LeetCode** and allows users to bookmark contests, filter them by platform, and access video solutions for past contests.
 
 ---
+## Try Now 
+
+### Deployed Live Link 
+- dub.sh/algosprint
+
+---
+## Project Walkthrough 
+
+### Video 
+- https://drive.google.com/file/d/1ZRmLBjmub4z4E9exHmZEXbdzgq9r0FDG/view?usp=sharing
+
+---
 ## 🌟 Features
 
 ### 🔍 **Contest Tracking**
