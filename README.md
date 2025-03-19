@@ -1,6 +1,6 @@
 # TLE CP-Tracker
 
-TLE CP-Tracker is a **Contest Tracking Web Application** built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js). It fetches **all upcoming and past coding contests** from platforms like **Codeforces, CodeChef, and LeetCode** and allows users to bookmark contests, filter them by platform, and access video solutions for past contests.
+TLE CP-Tracker is a **Contest Tracking Web Application** built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js), Web Scraping, GraphQL. It fetches **all upcoming and past coding contests** from platforms like **Codeforces, CodeChef, and LeetCode** and allows users to bookmark contests, filter them by platform, and access video solutions for past contests.
 
 ---
 ## 🌟 Features
@@ -38,47 +38,43 @@ TLE CP-Tracker is a **Contest Tracking Web Application** built using the **MERN 
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB (to store user data, bookmarks, and video solution links)
 - **Scraping/API Handling**: Fetching contest details via API calls
+- **Web Scraping**: Getting data from all platforms
+- **GraphQL**: For better API handling and scraping data
 - **Authentication**: JWT-based authentication for user sessions
-- **Deployment**: Deployed on **Render/Vercel**
+- **Deployment**: Deployed on **Render**
 
 ---
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone [https://github.com/yourusername/tle-cp-tracker.git](https://github.com/adityasharmawork/tle-cp-tracker)
-cd tle-cp-tracker
+git clone https://github.com/adityasharmawork/tle-new
+cd tle-new
 ```
 
 ### 2️⃣ Install Dependencies
 ```bash
 # Install backend dependencies
-cd backend
 npm install
 
 # Install frontend dependencies
-cd ../frontend
+cd ../client
 npm install
 ```
 
 ### 3️⃣ Setup Environment Variables
 Create a **.env** file in the backend directory and add the following:
 ```env
-PORT=5000
+PORT=8080
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
-FRONTEND_URL=http://localhost:3000
+FRONTEND_URL=http://localhost:8080
 ``` 
 
 ### 4️⃣ Run the Application
 ```bash
 # Start the backend server
-cd backend
 npm run dev
-
-# Start the frontend
-cd frontend
-npm start
 ```
 
 ---
@@ -89,19 +85,26 @@ npm start
 - `GET /api/platform/upcoming` → Fetch upcoming contests of that platform
 - `GET /api/platform/past` → Fetch past contests of that platform
 
+- `GET /api/codeforces` → Fetch all contests of codeforces
+- `GET /api/codeforces/upcoming` → Fetch upcoming contests of codeforces
+- `GET /api/codeforces/past` → Fetch past contests of codeforces
+
+- `GET /api/codechef` → Fetch all contests of codechef
+- `GET /api/codechef/upcoming` → Fetch upcoming contests of codechef
+- `GET /api/codechef/past` → Fetch past contests of codechef
+
+- `GET /api/leetcode` → Fetch all contests of leetcode
+- `GET /api/leetcode/upcoming` → Fetch upcoming contests of leetcode
+- `GET /api/leetcode/past` → Fetch past contests of leetcode
+
 ---
 ## 📌 Deployment
 
 ### Frontend
 ```bash
 npm run build
-# Deploy to Vercel/Netlify
-```
-
-### Backend
-```bash
 npm start
-# Deploy to Render/Heroku
+# Deploy to Render/Vercel
 ```
 
 ---
